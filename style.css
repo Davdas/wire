@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* navbar */
+
+nav {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid #e0e0e0;
+  z-index: 20;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 77%;
+  margin: auto;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+img {
+  width: 12rem;
+  height: 6rem;
+}
+
+.burger div {
+  display: none;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 3px;
+  transition: all 0.3s;
+}
+
+.list-items {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-around;
+}
+
+.items {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* navbar */
+
+/* hero section */
+
+h1 {
+  font-size: 60px;
+  margin: 2rem 0;
+  line-height: 4rem;
+}
+
+h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.cover-titles span {
+  font-size: 30px;
+  color: #1eb2b1;
+  border-bottom: 1px solid #1eb2b1;
+}
+
+a {
+  text-decoration: none;
+  color: #1eb2b1;
+}
+
+a:is(:link, :active, :visited).active {
+  color: #1eb2b1;
+  border: 1px solid #1eb2b1;
+  padding: 0.6rem;
+  border-radius: 5px;
+}
+
+.cover {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("./img/heroImg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  background-color: #00000064;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0rem;
+  right: 0;
+}
+
+.cover-titles {
+  width: 70%;
+  color: #fff;
+  z-index: 10;
+  translate: 0 100px;
+}
+
+.button-cover {
+  padding: 0.8rem;
+  background-color: transparent;
+  border: 1px solid #1eb2b1;
+  color: #1eb2b1;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 18px;
+  width: 11rem;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+/* hero section */
+
+/* article */
+
+.text-content h2 {
+  font-size: 36px;
+}
+
+.text-content p {
+  font-size: 16px;
+  margin: 1rem 0;
+}
+
+.text-content {
+  width: 77%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  line-height: 2rem;
+  padding: 10px 0;
+}
+
+/* article */
+
+/* section service */
+
+section {
+  background-color: #15344e;
+  width: 100%;
+  padding: 10px;
+}
+
+.title-service {
+  text-align: center;
+  color: #ffffff;
+  padding: 30px;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.service-section {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  max-width: 77%;
+  margin: auto;
+}
+
+.service-section p {
+  letter-spacing: 1px;
+}
+
+.service {
+  width: 400px;
+}
+
+.service p {
+  color: #fff;
+  margin: 20px 0;
+}
+
+.service > img {
+  width: 100%;
+  height: 400px;
+}
+
+.card-button {
+  padding: 0.6rem;
+  border-radius: 5px;
+  width: 8rem;
+  background-color: #15344e;
+  color: #1eb2b1;
+  border: 2px solid #1eb2b1;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+/* section service */
+
+/* banner */
+
+aside {
+  display: flex;
+  height: 200px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+.banner h2 {
+  margin: 10px 0;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.form-content {
+  border-top: 4px solid #1eb2b1;
+  margin-top: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  padding: 2rem;
+  line-height: 2rem;
+  outline: none;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #1eb2b1;
+}
+
+textarea {
+  border-radius: 5px;
+  border: 1px solid #1eb2b1;
+}
+
+.button-form {
+  width: 8rem;
+  padding: 1rem;
+  border: 1px solid #1eb2b1;
+  background-color: #fff;
+  color: #1eb2b1;
+  margin-top: 1.5rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #454954;
+}
+
+/* media query */
+
+@media screen and (max-width: 1092px) {
+  body {
+    overflow-x: hidden;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  .burger div {
+    display: block;
+  }
+  .list-items {
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    flex-direction: column;
+    width: 50%;
+    background-color: #fff;
+    line-height: 150px;
+    position: absolute;
+    top: 100px;
+    right: -1%;
+    transform: translateX(105%);
+    transition: transform 0.4s ease-in;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .toggle .link1 {
+    transform: rotate(-45deg) translate(3px, 6px);
+  }
+
+  .toggle .link2 {
+    opacity: 0;
+  }
+
+  .toggle .link3 {
+    transform: rotate(45deg) translate(-3px, -11px);
+  }
+
+  .cover,
+  .overlay {
+    height: 80vh;
+  }
+
+  .text-content {
+    height: 40vh;
+  }
+
+  .service-section {
+    max-width: 100%;
+  }
+
+  .service {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+    margin: 2rem 0;
+    line-height: 3rem;
+  }
+
+  span {
+    font-size: 25px;
+    color: #1eb2b1;
+  }
+
+  section {
+    padding: 20px 0;
+  }
+
+  .text-content {
+    padding: 0 0.5rem;
+    height: 80vh;
+  }
+
+  .banner {
+    width: 100%;
+    padding: 5px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .cover,
+  .overlay {
+    height: 100vh;
+  }
+}
