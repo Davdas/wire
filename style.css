@@ -370,11 +370,24 @@ footer {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 310px) and (max-width: 768px) {
   h1 {
     font-size: 35px;
     margin: 2rem 0;
     line-height: 3rem;
+  }
+
+  .list-items {
+    top: 50px;
+  }
+
+  .list-items li {
+    font-size: 12px;
+  }
+
+  .logo img {
+    width: 6rem;
+    height: 4rem;
   }
 
   span {
@@ -387,8 +400,9 @@ footer {
   }
 
   .text-content {
-    padding: 0 0.5rem;
-    height: 80vh;
+    height: auto;
+    margin-top: 20px;
+    text-align: center;
   }
 
   .banner {
