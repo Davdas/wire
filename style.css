@@ -387,8 +387,13 @@ footer {
   }
 
   .text-content {
-    padding: 0 0.5rem;
-    height: 80vh;
+    text-align: center;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .text-content h2 {
+    font-size: 26px;
   }
 
   .banner {
