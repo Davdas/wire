@@ -434,13 +434,8 @@ footer {
   }
 
   .text-content {
-    height: auto;
-    margin-top: 22px;
-    text-align: center;
-  }
-
-  .title-service {
-    font-size: 22px;
+    padding: 0 0.5rem;
+    height: 80vh;
   }
 
   .banner {
