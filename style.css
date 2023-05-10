@@ -434,8 +434,8 @@ footer {
   }
 
   .text-content {
-    padding: 0 0.5rem;
-    height: 80vh;
+    text-align: center;
+    height: auto;
   }
 
   .banner {
