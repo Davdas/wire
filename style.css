@@ -6,7 +6,6 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-family: "Raleway", sans-serif;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -36,7 +35,7 @@ nav {
   cursor: pointer;
 }
 
-img {
+.logo img {
   width: 12rem;
   height: 6rem;
 }
@@ -147,7 +146,7 @@ a:is(:link, :active, :visited).active {
 /* article */
 
 .text-content h2 {
-  font-size: 36px;
+  font-size: 23px;
 }
 
 .text-content p {
@@ -306,6 +305,11 @@ footer {
     display: flex;
     justify-content: space-around;
   }
+
+  .logo img {
+    width: 10rem;
+    height: 4rem;
+  }
   .burger div {
     display: block;
   }
@@ -314,11 +318,11 @@ footer {
     text-align: center;
     justify-content: start;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     background-color: #fff;
     line-height: 150px;
     position: absolute;
-    top: 100px;
+    top: 60px;
     right: -1%;
     transform: translateX(105%);
     transition: transform 0.4s ease-in;
@@ -352,13 +356,29 @@ footer {
     transform: rotate(45deg) translate(-3px, -11px);
   }
 
+  h1 {
+    font-size: 40px;
+    margin: 1rem 0;
+    line-height: 3rem;
+  }
+
+  .button-cover {
+    font-size: 16px;
+    width: 9rem;
+  }
+
+  .cover-titles span {
+    font-size: 20px;
+  }
+
   .cover,
   .overlay {
     height: 80vh;
   }
 
   .text-content {
-    height: 40vh;
+    height: auto;
+    margin-top: 25px;
   }
 
   .service-section {
@@ -372,9 +392,23 @@ footer {
 
 @media screen and (min-width: 310px) and (max-width: 768px) {
   h1 {
-    font-size: 35px;
-    margin: 2rem 0;
-    line-height: 3rem;
+    font-size: 30px;
+    margin: 1rem 0;
+    line-height: 2.5rem;
+  }
+
+  .cover-titles span {
+    font-size: 22px;
+  }
+
+  .cover-titles h3 {
+    font-size: 16px;
+  }
+
+  .button-cover {
+    padding: 0.5rem;
+    font-size: 14px;
+    width: 8rem;
   }
 
   .list-items {
@@ -387,7 +421,7 @@ footer {
 
   .logo img {
     width: 6rem;
-    height: 4rem;
+    height: 3rem;
   }
 
   span {
@@ -401,8 +435,12 @@ footer {
 
   .text-content {
     height: auto;
-    margin-top: 20px;
+    margin-top: 22px;
     text-align: center;
+  }
+
+  .title-service {
+    font-size: 22px;
   }
 
   .banner {
