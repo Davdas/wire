@@ -320,7 +320,7 @@ footer {
     flex-direction: column;
     width: 40%;
     background-color: #fff;
-    line-height: 150px;
+    line-height: 80px;
     position: absolute;
     top: 60px;
     right: -1%;
@@ -413,6 +413,8 @@ footer {
 
   .list-items {
     top: 50px;
+    width: 50%;
+    line-height: 100px;
   }
 
   .list-items li {
