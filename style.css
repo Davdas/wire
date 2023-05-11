@@ -91,13 +91,6 @@ a {
   color: #1eb2b1;
 }
 
-a:is(:link, :active, :visited).active {
-  color: #1eb2b1;
-  border: 1px solid #1eb2b1;
-  padding: 0.6rem;
-  border-radius: 5px;
-}
-
 .cover {
   display: flex;
   justify-content: center;
@@ -293,6 +286,10 @@ footer {
   width: 100%;
   height: 200px;
   background-color: #454954;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 
 /* media query */

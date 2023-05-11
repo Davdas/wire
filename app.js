@@ -1,9 +1,9 @@
-const activePage = window.location.pathname;
-const navLink = document.querySelectorAll("nav a").forEach((link) => {
-  if (link.href.includes(`${activePage}`)) {
-    link.classList.add("active");
-  }
-});
+// const activePage = window.location.pathname;
+// const navLink = document.querySelectorAll("nav a").forEach((link) => {
+//   if (link.href.includes(`${activePage}`)) {
+//     link.classList.add("active");
+//   }
+// });
 
 const navSlide = () => {
   const burger = document.querySelector(".burger");
@@ -24,6 +24,11 @@ const navSlide = () => {
     });
 
     // burger Animation
+    burger.classList.toggle("toggle");
+  });
+
+  nav.addEventListener("mouseup", () => {
+    nav.classList.remove("nav-active");
     burger.classList.toggle("toggle");
   });
 };
